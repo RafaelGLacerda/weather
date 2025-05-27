@@ -1,5 +1,11 @@
 # Weather - Previsão do Tempo ⛅
 
+---
+
+https://cityweatherbasic.netlify.app/
+
+---
+
 ## Descrição
 
 Este projeto é um site simples e funcional para consulta da previsão do tempo. Ele permite que o usuário informe uma cidade e obtenha informações meteorológicas atualizadas, como temperatura, descrição do clima, umidade e vento.
