@@ -1,0 +1,116 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fa;
+  color: #2b2d42;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Container principal */
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #264653;
+}
+
+/* Campo de entrada */
+input[type="text"] {
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 2px solid #cbd5e0;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  background-color: #f7fafc;
+}
+
+input[type="text"]:focus {
+  border-color: #2a9d8f;
+  background-color: #ffffff;
+}
+
+/* Lista de sugestões */
+#suggestions {
+  list-style: none;
+  background: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 200px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+#suggestions li {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#suggestions li:hover {
+  background-color: #2a9d8f;
+  color: white;
+}
+
+/* Container da previsão */
+#weatherContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2a9d8f;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.day {
+  background: #e1fffb;
+  border: 1px solid #bce0dc;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.day strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #1d3557;
+}
+
+.day img {
+  margin-top: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .forecast {
+    grid-template-columns: 1fr;
+  }
+}
