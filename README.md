@@ -1,4 +1,4 @@
-# Weather - Previsão do Tempo
+# Weather - Previsão do Tempo ⛅
 
 ## Descrição
 
