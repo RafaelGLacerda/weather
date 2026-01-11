@@ -30,10 +30,3 @@ O site consome uma API de clima para fornecer dados em tempo real de forma prát
 - JavaScript (fetch API)
 - API externa de previsão do tempo (ex: OpenWeatherMap)
 
----
-
-## Como usar
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/RafaelGLacerda/weather.git
